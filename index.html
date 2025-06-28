@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeZoneBuddy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.2/build/global/luxon.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🕒 TimeZoneBuddy</h1>
+    <p>Enter city and select its time zone:</p>
+
+    <div class="form">
+      <input type="text" id="cityInput" placeholder="Enter City (e.g. New York)">
+      <button onclick="addParticipant()">Add Participant</button>
+    </div>
+
+    <div class="participant-list" id="participants"></div>
+
+    <button class="calculate-btn" onclick="findMeetingTime()">Find Meeting Time</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
